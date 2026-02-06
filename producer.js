@@ -39,14 +39,6 @@ async function produceMessage() {
     endpoint_uri_prefix: '/POST/:id/queue',
   };
   
-  // const message = {
-  //   timestamp: generateTimestamp(),
-  //   endpoint: 'POST/queue/api-node/victor-api',
-  //   status_code: 201,
-  //   http_method: 'POST',
-  //   endpoint_uri_prefix: '/POST/:id/queue',
-  // };
-
   await producer.send({
     topic,
     messages: [
